@@ -1,0 +1,5 @@
+*.retry
+*.swp
+.DS_Store
+hosts_test
+vault.passwd
