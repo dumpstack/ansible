@@ -1,8 +1,0 @@
-language: python
-
-branches:
-  only:
-    - master
-
-script:
-  - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/dumpstack/ansible/trigger/3a2c8cf9-f1bd-4f96-951d-f78294856d01/
