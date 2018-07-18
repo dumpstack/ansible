@@ -2,6 +2,7 @@ FROM alpine
 
 RUN apk add --no-cache \
   git \
+  openssh-client \
   py-pip \
   py-pynacl \
   py-cffi \
