@@ -1,6 +1,7 @@
 FROM alpine
 
 RUN apk add --no-cache \
+  git \
   py-pip \
   py-pynacl \
   py-cffi \
