@@ -1,5 +1,20 @@
-FROM centos:latest
+FROM alpine
 
-RUN yum update -y && yum install -y epel-release
+RUN apk add --no-cache \
+  py-pip \
+  py-pynacl \
+  py-cffi \
+  py-bcrypt \
+  py-cryptography \
+  py-openssl
 
-RUN yum install -y ansible ansible-lint git
+RUN pip install --upgrade pip
+
+RUN pip install \
+  ansible \
+  ansible-lint \
+  ansible-modules-hashivault \
+  awscli \
+  boto \
+  dopy \
+  hvac
