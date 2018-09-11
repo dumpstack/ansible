@@ -1,6 +1,7 @@
 FROM alpine
 
 RUN apk add --no-cache \
+  busybox-extras \
   git \
   openssh-client \
   py-pip \
