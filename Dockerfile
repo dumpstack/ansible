@@ -5,12 +5,12 @@ RUN apk add --no-cache \
   git \
   openssh-client \
   py-pip \
-  py-pynacl \
-  py-cffi \
   py-bcrypt \
+  py-cffi \
   py-cryptography \
   py-openssl \
-  py-psutil
+  py-psutil \
+  py-pynacl
 
 RUN pip install --upgrade pip
 
