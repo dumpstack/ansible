@@ -20,4 +20,5 @@ RUN pip install \
   awscli \
   boto \
   dopy \
-  hvac
+  hvac \
+  yamllint
