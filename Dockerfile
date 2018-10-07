@@ -9,7 +9,8 @@ RUN apk add --no-cache \
   py-cffi \
   py-bcrypt \
   py-cryptography \
-  py-openssl
+  py-openssl \
+  py-psutil
 
 RUN pip install --upgrade pip
 
@@ -21,4 +22,5 @@ RUN pip install \
   boto \
   dopy \
   hvac \
+  molecule \
   yamllint
