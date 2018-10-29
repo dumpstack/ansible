@@ -23,4 +23,5 @@ RUN pip install \
   dopy \
   hvac \
   molecule \
+  pyapi-gitlab \
   yamllint
