@@ -2,7 +2,7 @@ FROM alpine:3.8
 
 ARG BUILD_PKGS="build-base libffi-dev linux-headers openssl-dev python3-dev"
 ARG MAIN_PKGS="git openssh-client python3"
-ARG PY_PKGS="ansible ansible-lint ansible-modules-hashivault awscli boto dopy hvac molecule pyapi-gitlab yamllint"
+ARG PY_PKGS="ansible ansible-lint ansible-modules-hashivault awscli boto dopy hvac molecule pyapi-gitlab testinfra yamllint"
 
 RUN apk add --no-cache --virtual build_pkgs $BUILD_PKGS && \
   apk add --no-cache --virtual main_pkgs $MAIN_PKGS && \
